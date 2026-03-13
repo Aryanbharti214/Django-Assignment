@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student List</title>
+</head>
+
+<body>
+
+    <h1>Student List</h1>
+
+    <ul>
+
+        {% for student in students %}
+
+        <li>
+
+            <a href="/students/{{ student.id }}/">
+
+                Name: {{ student.name }}
+
+            </a>
+
+            <br>
+
+            Age: {{ student.age }}
+
+            <br>
+
+            Roll Number: {{ student.roll_number }}
+
+            <br>
+
+            Department: {{ student.department }}
+
+        </li>
+
+        <br>
+
+        {% endfor %}
+
+    </ul>
+
+</body>
+
+</html>
